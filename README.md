@@ -8,7 +8,7 @@ The paper Wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Repres
 ![image](https://user-images.githubusercontent.com/102625347/217045620-66360f7c-50e6-4343-b1a6-1ec64613432a.png)<br>
 ![image](https://user-images.githubusercontent.com/102625347/217045685-4e250ef2-e67f-47e4-8052-7633f8d585d4.png)<br>
 The wav2vec 2.0 enabled speech recognition models achieved SOTA performance with a word error rate (WER) of 8.6 percent on noisy speech and 5.2 percent on clean speech on the standard LibriSpeech benchmark.<br>
-## The Metric: word error rate (WER)
+# The Metric: word error rate (WER)
 Word Error Rate (WER) is a common evaluation metric used in speech recognition and natural language processing to measure the accuracy of a generated transcript or translation compared to a reference text. It is defined as the ratio of the number of substitution, deletion, and insertion errors in the generated text to the number of words in the reference text. Lower WER values indicate a higher accuracy of the generated text compared to the reference.<br>
 In this project, we will give an in-detail explanation of how Wav2Vec2's pretrained checkpoints can be fine-tuned on 'the minds' English ASR dataset.<br>
 # Connectionist Temporal Classification (CTC)
