@@ -13,7 +13,11 @@ Word Error Rate (WER) is a common evaluation metric used in speech recognition a
 In this project, we will give an in-detail explanation of how Wav2Vec2's pretrained checkpoints can be fine-tuned on 'the minds' English ASR dataset.<br>
 # Connectionist Temporal Classification (CTC)
 Connectionist Temporal Classification (CTC) is an algorithm used in deep learning models for speech recognition and natural language processing tasks. It is a form of loss function that trains a neural network to predict sequences of labels, such as phonemes or characters, from input sequences, such as audio signals or speech features.<br>
-
+# The Datset
 CTC is designed to handle input sequences of varying lengths, which is a common problem in speech recognition and natural language processing, where the length of the input sequence (e.g. length of an audio clip) may not be the same as the length of the output sequence (e.g. length of the transcription). The CTC loss function allows the network to learn an alignment between the input and output sequences, so that the network can produce correct transcriptions even when the lengths are different.<br>
 
 CTC is implemented as a layer in a neural network architecture, and is trained end-to-end with the rest of the network. The output of the network is a probability distribution over the set of possible labels at each time step, and the CTC loss function computes the negative log-likelihood of the target transcription given the network's output probabilities. The network is trained to minimize the CTC loss, which results in improved recognition accuracy.<br>
+# The "minds14" dataset
+The "PolyAI/minds14" dataset is a speech recognition dataset that is part of the OpenAI Datasets collection. It is based on the "MInDS" (Mobile Integrated Diagnostic System) dataset and consists of spoken English phrases collected from a diverse set of speakers. The dataset includes both "train" and "test" splits and provides audio recordings and transcriptions of the phrases.
+
+The "minds14" dataset is used for speech recognition research and can be used to train and evaluate machine learning models for this task. It provides a large and diverse set of speech data, which is important for training models that can generalize well to real-world scenarios. The dataset is also publicly available and well-documented, which makes it easy for researchers to access and use.
