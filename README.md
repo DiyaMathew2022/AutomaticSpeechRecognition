@@ -34,3 +34,12 @@ The Wav2Vec2CTCTokenizer class takes a vocabulary file as input and uses it to m
 Wav2Vec2FeatureExtractor is a class from the Hugging Face Transformers library that is used to extract features from audio sequences using the Wav2Vec2 model. The Wav2Vec2 model is a pre-trained deep neural network that is designed to handle raw audio waveform data.
 
 The Wav2Vec2FeatureExtractor class is used to extract features from audio sequences that can then be used as input to other models, such as language models, for further processing. The extracted features represent a compact and meaningful representation of the audio data, and can be used for tasks such as speech recognition or audio classification.
+# Wav2Vec2Processor <br>
+
+Wav2Vec2Processor is a class from the Hugging Face Transformers library that is used to process audio sequences for use with the Wav2Vec2 model.<br>
+
+The Wav2Vec2 model is a pre-trained deep neural network designed to handle raw audio waveform data, and the Wav2Vec2Processor class is used to convert the audio sequences into a format that the model can process.<br>
+
+The Wav2Vec2Processor class combines the functionality of the Wav2Vec2CTCTokenizer and Wav2Vec2FeatureExtractor classes and provides a simple way to process audio sequences for use with the Wav2Vec2 model. The Wav2Vec2Processor takes an audio sequence as input, tokenizes it into subword tokens using the Wav2Vec2CTCTokenizer, and then extracts features from the tokenized sequence using the Wav2Vec2FeatureExtractor.<br>
+
+The Wav2Vec2Processor class makes it easy to preprocess audio sequences for use with the Wav2Vec2 model, and eliminates the need to manually perform the tokenization and feature extraction steps.<br>
