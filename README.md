@@ -21,3 +21,16 @@ CTC is implemented as a layer in a neural network architecture, and is trained e
 The "PolyAI/minds14" dataset is a speech recognition dataset that is part of the OpenAI Datasets collection. It is based on the "MInDS" (Mobile Integrated Diagnostic System) dataset and consists of spoken English phrases collected from a diverse set of speakers. The dataset includes both "train" and "test" splits and provides audio recordings and transcriptions of the phrases.
 
 The "minds14" dataset is used for speech recognition research and can be used to train and evaluate machine learning models for this task. It provides a large and diverse set of speech data, which is important for training models that can generalize well to real-world scenarios. The dataset is also publicly available and well-documented, which makes it easy for researchers to access and use.
+
+# Wav2Vec2CTCTokenizer<br>
+The Wav2Vec2CTCTokenizer is a class from the Hugging Face Transformers library that is used to tokenize audio sequences into subword tokens for use with the Wav2Vec2 model.
+
+The Wav2Vec2 model is a pre-trained deep neural network designed to handle raw audio waveform data, and the Wav2Vec2CTCTokenizer is used to convert the audio sequences into a format that the model can process. The tokenizer is based on the Connectionist Temporal Classification (CTC) loss function, which is commonly used in speech recognition.
+
+The Wav2Vec2CTCTokenizer class takes a vocabulary file as input and uses it to map the subword tokens in the audio sequences to numerical values that can be processed by the Wav2Vec2 model. The vocabulary file is typically created by training a language model on a large corpus of text data.<br>
+
+# Wav2Vec2FeatureExtractor <br>
+
+Wav2Vec2FeatureExtractor is a class from the Hugging Face Transformers library that is used to extract features from audio sequences using the Wav2Vec2 model. The Wav2Vec2 model is a pre-trained deep neural network that is designed to handle raw audio waveform data.
+
+The Wav2Vec2FeatureExtractor class is used to extract features from audio sequences that can then be used as input to other models, such as language models, for further processing. The extracted features represent a compact and meaningful representation of the audio data, and can be used for tasks such as speech recognition or audio classification.
