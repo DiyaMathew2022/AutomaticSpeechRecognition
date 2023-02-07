@@ -11,7 +11,7 @@ The wav2vec 2.0 enabled speech recognition models achieved SOTA performance with
 # The Metric: word error rate (WER)
 Word Error Rate (WER) is a common evaluation metric used in speech recognition and natural language processing to measure the accuracy of a generated transcript or translation compared to a reference text. It is defined as the ratio of the number of substitution, deletion, and insertion errors in the generated text to the number of words in the reference text. Lower WER values indicate a higher accuracy of the generated text compared to the reference.<br>
 In this project, we will give an in-detail explanation of how Wav2Vec2's pretrained checkpoints can be fine-tuned on 'the minds' English ASR dataset.<br>
-# Connectionist Temporal Classification (CTC)
+# Connectionist Temporal Classification (CTC) Algorithm
 Connectionist Temporal Classification (CTC) is an algorithm used in deep learning models for speech recognition and natural language processing tasks. It is a form of loss function that trains a neural network to predict sequences of labels, such as phonemes or characters, from input sequences, such as audio signals or speech features.<br>
 
 CTC is designed to handle input sequences of varying lengths, which is a common problem in speech recognition and natural language processing, where the length of the input sequence (e.g. length of an audio clip) may not be the same as the length of the output sequence (e.g. length of the transcription). The CTC loss function allows the network to learn an alignment between the input and output sequences, so that the network can produce correct transcriptions even when the lengths are different.<br>
